@@ -1,16 +1,16 @@
 # Consul notes
 
-## Commands
-- consul    				//To run
-- consul agent				//run agent in client mode
-- consul agent -server 		//run the agent in server mode
-- consul agent -dev			//run agent in dev mode, start single node consul env
-- consul members			//list all members of the cluster
+### Commands
+- consul    				 //To run
+- consul agent				 //run agent in client mode
+- consul agent -server 		 //run the agent in server mode
+- consul agent -dev			 //run agent in dev mode, start single node consul env
+- consul members			 //list all members of the cluster
 
 - curl localhost:<port>/v1/catalog/nodes	//get all info on nodes
 - dig @127.0.0.1 -p <port> <node name> 		//use dns protocol to get the services on this dns. node name is provided on consul startup and consul members command
 
-
+### Notes
 - To install, place the downloaded app into your path or update your path to include the dir, or use 'brew install consul' for mac 
 - Running consul will start up an agent.
 - Agents have 2 modes, server or client mode
